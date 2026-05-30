@@ -181,8 +181,8 @@ async function checkExpiry({ onExpire, onWarn, exitOnExpiry = true } = {}) {
             `║  📅  Expiry Date  : ${fmtDate(expiryDate)}\n` +
             `║  ⏱️   Expired      : ${expiredAgo} day(s) ago\n` +
             `║  🔒  All commands have been locked.\n` +
-            `║  📞  Contact SmurfXMD (+254105521300) to renew.\n` +
-            `║  💬  https://wa.me/254105521300\n` +
+            `║  📞  Contact SmurfXMD (+254788409105) to renew.\n` +
+            `║  💬  https://wa.me/254788409105\n` +
             `╚${'═'.repeat(56)}╝\n`;
 
         logger.error('EXPIRY', `LICENCE EXPIRED on ${fmtDate(expiryDate)} (${expiredAgo} days ago). Shutting down.`);
@@ -215,7 +215,7 @@ async function checkExpiry({ onExpire, onWarn, exitOnExpiry = true } = {}) {
                 `📅 *Expires on:* ${fmtDate(expiryDate)}\n` +
                 `⏳ *Time left:*  ${countdown}\n` +
                 `${expiryBar(days, 30)}\n\n` +
-                `📞 *Renew now:*  https://wa.me/254105521300\n` +
+                `📞 *Renew now:*  https://wa.me/254788409105\n` +
                 `💬 Contact *SmurfXMD* before it's too late!\n\n` +
                 `_${process.env.BOT_NAME || 'SMURF-XMD'}_`;
 
