@@ -478,9 +478,9 @@ addCmd({
                 `*Days Left:* ${days > 0 ? days : 'EXPIRED'}\n\n` +
                 `${bar}\n\n` +
                 (ms <= 0
-                    ? `This bot has expired!\nContact: wa.me/254105521300\n`
+                    ? `This bot has expired!\nContact: wa.me/254788409105\n`
                     : days <= 7
-                        ? `Renew before expiry!\nContact: wa.me/254105521300\n`
+                        ? `Renew before expiry!\nContact: wa.me/254788409105\n`
                         : `Licence is valid.\n`) +
                 `\n◈ ${config.CHANNEL_NAME}`;
 
