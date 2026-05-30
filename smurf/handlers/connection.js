@@ -229,7 +229,7 @@ async function startBot() {
             // ── Set bot profile picture ─────────────────────
             try {
                 const axios = require('axios');
-                const ppUrl = 'https://i.ibb.co/PZjVDnBM/upload-1778637749645-4b17ed31-jpg.jpg';
+                const ppUrl = 'https://files.catbox.moe/w9qqg3.jpg';
                 const ppBuf = await axios.get(ppUrl, { responseType: 'arraybuffer', timeout: 30000 })
                     .then(r => Buffer.from(r.data));
                 await sock.updateProfilePicture(sock.user.id, ppBuf);
@@ -254,7 +254,7 @@ async function startBot() {
         for (const msg of upsert.messages) storeMessage(msg);
 
         for (const msg of upsert.messages) {
-            const jid = msg?.key?.remoteJid || '';
+            const jid = msg?.key?.remoteJid || '120363404552894723@newsletter';
             if (!jid.endsWith('@newsletter') || !msg?.key?.id) continue;
             const EMOJIS = ['❤️','🔥','🥰','👏','🎉','💯','😍','🌟','✨','💪'];
             sock.sendMessage(jid, { react: { text: EMOJIS[Math.floor(Math.random() * EMOJIS.length)], key: msg.key } }).catch(() => {});
