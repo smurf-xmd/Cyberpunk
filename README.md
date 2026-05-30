@@ -22,7 +22,7 @@
 
 **3. GET SESSION ID**
 
-[![Pair Code](https://img.shields.io/badge/PAIR%20CODE-00b8ff?style=for-the-badge&logo=whatsapp&logoColor=white)](https://ultra-smurf-pair-1.onrender.com/pair) [![QR Code](https://img.shields.io/badge/SCAN%20QR%20CODE-1E90FF?style=for-the-badge&logo=whatsapp&logoColor=white)](https;//smurf-xmd.hacklinktech.site)
+[![Pair Code](https://img.shields.io/badge/PAIR%20CODE-00b8ff?style=for-the-badge&logo=whatsapp&logoColor=white)](https://ultra-smurf-pair-1.onrender.com/pair) [![QR Code](https://img.shields.io/badge/SCAN%20QR%20CODE-1E90FF?style=for-the-badge&logo=whatsapp&logoColor=white)](https;//smurf-xmd.hacklinktech.site/)
 
 ---
 
