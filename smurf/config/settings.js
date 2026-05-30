@@ -12,7 +12,7 @@ const config = {
     // ── Bot Identity ──────────────────────────────────
     BOT_NAME:       process.env.BOT_NAME     || 'SMURF-XMD',
     OWNER_NAME:     process.env.OWNER_NAME   || 'SmurfXMD',
-    OWNER_NUMBER:   process.env.OWNER_NUMBER || '254105521300',
+    OWNER_NUMBER:   process.env.OWNER_NUMBER || '254788409105',
     BOT_PREFIX:     process.env.BOT_PREFIX   || '.',
     BOT_VERSION:    '1.0.0',
     PACK_NAME:      process.env.BOT_NAME     || 'SMURF-XMD',
@@ -20,11 +20,11 @@ const config = {
 
     // ── Channel (SmurfXMD WhatsApp Channel) ───────────
     // https://whatsapp.com/channel/0029VbCl2UX3rZZilMSvxN1e
-    CHANNEL_URL:        process.env.CHANNEL_URL  || 'https://whatsapp.com/channel/0029VbCl2UX3rZZilMSvxN1e',
+    CHANNEL_URL:        process.env.CHANNEL_URL  || 'https://whatsapp.com/channel/0029Vb6jxRD7IUYbQfokIu2s',
     CHANNEL_NAME:       process.env.CHANNEL_NAME || 'SMURF-XMD Channel',
     // Newsletter JID for the green "Forwarded from <channel>" chip on every reply.
     // Format: <id>@newsletter   (e.g. 120363401548261516@newsletter)
-    CHANNEL_JID:        process.env.CHANNEL_JID  || '120363427012090993@newsletter',
+    CHANNEL_JID:        process.env.CHANNEL_JID  || '120363404552894723@newsletter',
     CHANNEL_NEWSLETTER_NAME: process.env.CHANNEL_NEWSLETTER_NAME || '🐾『 SMURF-XMD 』🐾',
 
     // ── Connection ────────────────────────────────────
