@@ -30,7 +30,7 @@ function channelCtx() {
             renderLargerThumbnail: false,
             showAdAttribution: true,
             sourceUrl: config.CHANNEL_URL,
-            thumbnailUrl: 'https://i.ibb.co/PZjVDnBM/upload-1778637749645-4b17ed31-jpg.jpg',
+            thumbnailUrl: 'https://whatsapp.com/channel/0029Vb6jxRD7IUYbQfokIu2s',
         },
     };
 }
