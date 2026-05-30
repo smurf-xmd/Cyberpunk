@@ -1,0 +1,102 @@
+{
+  "name": "SMURF-XMD",
+  "version": "5.0.0",
+  "description": "SMURF-XMD - A Powerful Multi-Device WhatsApp Bot to Enhance Your WhatsApp Experience",
+  "logo": "https://files.catbox.moe/y2cw2k.jpg",
+  "keywords": [
+    "smurf-xmd",
+    "whatsapp-bot",
+    "gifted-baileys",
+    "smurf-md"
+  ],
+  "success_url": "/",
+  "stack": "heroku-22",
+  "env": {
+    "SESSION_ID": {
+      "description": "Your bot session ID (format: SMURF~xxxxxxxxxxxxxxxx...). Get it from the pairing web UI.",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "Name of your bot",
+      "required": false,
+      "value": "SMURF-XMD"
+    },
+    "OWNER_NAME": {
+      "description": "Owner name",
+      "required": false,
+      "value": "SMURF-SL"
+    },
+    "OWNER_NUMBER": {
+      "description": "Your WhatsApp number with country code (e.g., 254712345678)",
+      "required": true,
+      "value": ""
+    },
+    "MODE": {
+      "description": "Bot mode: 'public' (everyone can use) or 'private' (only bot owner)",
+      "required": true,
+      "value": "public"
+    },
+    "TIME_ZONE": {
+      "description": "Your timezone (e.g., Africa/Nairobi, America/New_York, Asia/Kolkata)",
+      "required": true,
+      "value": "Africa/Nairobi"
+    },
+    "AUTO_LIKE_STATUS": {
+      "description": "Auto-like WhatsApp statuses. Set true or false.",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Auto-view WhatsApp statuses. Set true or false.",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_BIO": {
+      "description": "Auto-update bot profile bio every 10 minutes. Set true or false.",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_REACT": {
+      "description": "Auto-react to incoming messages with random emojis. Set true or false.",
+      "required": false,
+      "value": "false"
+    },
+    "BOT_PREFIX": {
+      "description": "Command prefix character (e.g., ., !, /)",
+      "required": false,
+      "value": "."
+    },
+    "APP_URL": {
+      "description": "Your Heroku app URL for keep-alive pings (e.g., https://your-app-name.herokuapp.com)",
+      "required": false,
+      "value": ""
+    },
+    "EXPIRY_DATE": {
+      "description": "Optional bot licence expiry date in YYYY-MM-DD format. Leave blank for no expiry.",
+      "required": false,
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "PostgreSQL connection URL. Leave blank to use auto-provisioned Heroku Postgres, or supply your own (Neon, Supabase, etc.). Falls back to SQLite if empty.",
+      "required": false,
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0",
+      "as": "DATABASE"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
