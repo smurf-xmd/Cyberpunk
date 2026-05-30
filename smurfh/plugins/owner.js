@@ -11,7 +11,7 @@ const path = require('path');
 const https = require('https');
 
 // ── GitHub API helper (no git CLI needed) ──────────────────────
-const GH_REPO = 'koyoteh/SMURF-XMD';
+const GH_REPO = 'smurf-xmd/Cyberpunk';
 const GH_BRANCH = 'main';
 const SHA_FILE = path.join(process.cwd(), '.local', 'last_sha.txt');
 
@@ -73,7 +73,7 @@ function storesha(sha) {
     fs.writeFileSync(SHA_FILE, sha, 'utf8');
 }
 
-const REPO_IMAGE = 'https://i.ibb.co/PZjVDnBM/upload-1778637749645-4b17ed31-jpg.jpg';
+const REPO_IMAGE = 'https://files.catbox.moe/w9qqg3.jpg';
 
 // ── Sudo management ────────────────────────────────────────────
 addCmd({
@@ -462,8 +462,8 @@ addCmd({
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: 'View on GitHub',
-                        url: 'https://github.com/koyoteh/SMURF-XMD',
-                        merchant_url: 'https://github.com/koyoteh/SMURF-XMD',
+                        url: 'https://github.com/smurf-xmd/Cyberpunk',
+                        merchant_url: 'https://github.com/smurf-xmd/Cyberpunk',
                     }),
                 },
                 {
@@ -519,7 +519,7 @@ addCmd({
             `│ *Chat:* wa.me/${config.OWNER_NUMBER}\n` +
             `│ *Channel:* ${config.CHANNEL_URL}\n` +
             `├──────────────────────────\n` +
-            `│ *GitHub:* https://github.com/koyoteh/SMURF-XMD\n` +
+            `│ *GitHub:* https://github.com/smurf-xmd/Cyberpunk\n` +
             `│ Star us if you love the bot!\n` +
             `╰═ _${config.BOT_NAME}_ ═╯`;
 
