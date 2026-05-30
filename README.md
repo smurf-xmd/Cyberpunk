@@ -35,7 +35,7 @@
 #### 🐧 VPS / Termux
 
 ```bash
-git clone https://github.com/koyoteh/SMURF-XMD.git
+git clone https://github.com/smurf-xmd/Cyberpunk.git
 cd SMURF-XMD
 npm install --legacy-peer-deps
 npm start
